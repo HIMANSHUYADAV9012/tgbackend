@@ -12,7 +12,7 @@ import traceback
 app = FastAPI()
 
 # 🔧 Replace with your actual bot token and chat ID
-BOT_TOKEN = "8469613543:AAEG5_OxiBEbweHIeBUqts7pXjormS9kwbI"
+BOT_TOKEN = "8223984538:AAF5vhL8fbjZaMULwunhzLuruPr0dwhfrJE"
 ADMIN_CHAT_ID = "5029478739"
 
 bot = Bot(token=BOT_TOKEN)
@@ -21,7 +21,7 @@ bot = Bot(token=BOT_TOKEN)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # Adjust ports
-    allow_methods=["GET"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
